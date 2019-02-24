@@ -26,8 +26,11 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="userInputChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="qvz-nN-TWT"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dn-IE-NM6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dn-IE-NM6">
                                 <rect key="frame" x="256" y="64" width="103" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Cut-hf-C7q"/>
@@ -87,6 +90,9 @@
                                     <segment title="-"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="signSegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ybu-fC-TMc"/>
+                                </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bCh-CA-V66">
                                 <rect key="frame" x="43" y="444" width="289.33333333333331" height="28"/>
@@ -147,6 +153,7 @@
                         <outlet property="formulaPicker" destination="pVx-EI-xY0" id="0ib-qn-UXR"/>
                         <outlet property="fromUnitsLabel" destination="6Dn-IE-NM6" id="FP5-Rz-8ax"/>
                         <outlet property="resultsLabel" destination="533-lQ-SnX" id="ke6-MU-ZRy"/>
+                        <outlet property="signSegment" destination="VLd-1c-r19" id="OnB-At-tuH"/>
                         <outlet property="userInput" destination="MR2-7i-1b9" id="jDG-gr-KAW"/>
                     </connections>
                 </viewController>
